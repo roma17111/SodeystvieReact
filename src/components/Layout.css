@@ -1,0 +1,40 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: #ecd53e;
+}
+
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    background-color: coral;
+}
+
+header {
+    text-align: center;
+    font-size: 38px;
+    background-color: aqua;
+}
+
+.link {
+    text-align: center;
+}
