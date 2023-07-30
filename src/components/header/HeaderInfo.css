@@ -1,0 +1,16 @@
+.info-div-header{
+    width: 1500px;
+    display: inline-block;
+    text-align: center;
+
+}
+
+@media (max-width: 550px) {
+    .info-div-header{
+        width: 500px;
+        display: block;
+        text-align: center;
+
+    }
+}
+

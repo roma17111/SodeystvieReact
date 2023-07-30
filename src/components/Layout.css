@@ -39,12 +39,22 @@ header {
     text-align: center;
 }
 
-.main-image{
-    display: block;
+.main-image {
+    display: inline-block;
     margin-left: auto;
     margin-right: auto;
     padding-top: 30px;
     width: 400px;
     height: 400px;
+}
+
+@media (max-width: 450px) {
+    .main-image {
+        display: block;
+    }
+    .wrapper{
+        display: block;
+        justify-content: center;
+    }
 }
 
