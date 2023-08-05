@@ -13,11 +13,11 @@ html {
 body {
     font-family: 'Roboto Condensed', sans-serif;
     height: 100%;
-    background: linear-gradient(70deg, #FFEF6152 0%, transparent, #FFDF8E82 50%, #FF876BF5 100%), linear-gradient(160deg, transparent, #FFBA9170 35%, #FFA85C7D 35%, #9494945C 100%), radial-gradient(ellipse  at 30%  70%, #FCE97F 0%, #FFB592 100%);
+    background: linear-gradient(105deg, #987b4670 0%, #8f764885 20%, #87714a9a 40%, #7f6c4caf 60%, #7f6c4caf 80%, #987b4670 100%), linear-gradient(190deg, #66573D 0%, #D3C09D 25%, #A76B01 25%, #F0E0C3 30%, #D5B885 100%);
 }
 
 .main{
-    color: rgba(255, 255, 255, 0.75)
+    color: rgb(255, 255, 255)
 }
 
 footer {

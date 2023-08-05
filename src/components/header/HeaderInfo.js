@@ -4,7 +4,7 @@ import logo from "../../photos/sod.jpg";
 const HeaderInfo = () => {
     return (
         <div >
-            <nav className="navbar navbar-expand-lg bg-primary p-1 nav-color">
+            <nav className="navbar navbar-expand-lg bg-primary p-0 nav-color">
                 <div className="container">
                     <img src={logo} className="" width= "60"  alt="Картинка"/>
                     <button className="navbar-toggler white" type="button" data-bs-toggle="collapse"
@@ -18,16 +18,16 @@ const HeaderInfo = () => {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav">
-                            <li className="nav-item">
+                            <li className="nav-item btn btn-outline-danger">
                                 <a className="nav-link  white" aria-current="page" href="#">Главная</a>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item btn btn-outline-danger">
                                 <a className="nav-link  white" href="#">Наши волонтёры</a>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item btn btn-outline-danger">
                                 <a className="nav-link  white" href="#">Актуальные проекты</a>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item btn btn-outline-danger">
                                 <a className="nav-link  white" href="#">Архив проектов</a>
                             </li>
                         </ul>

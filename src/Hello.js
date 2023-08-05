@@ -1,11 +1,12 @@
 import React from "react";
 import './App.css';
+import MainInfo from "./components/maintext/MainInfo";
 
 
 const Hello = () => {
     return(
         <div>
-            <h1>Hello</h1>
+            <MainInfo/>
         </div>
     )
 }
