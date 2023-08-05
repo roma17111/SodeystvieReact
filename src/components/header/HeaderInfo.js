@@ -6,7 +6,7 @@ const HeaderInfo = () => {
         <div >
             <nav className="navbar navbar-expand-lg bg-primary p-0 nav-color">
                 <div className="container">
-                    <img src={logo} className="" width= "60"  alt="Картинка"/>
+                    <img src={logo} className="" width= "59"  alt="Картинка"/>
                     <button className="navbar-toggler white" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                             aria-label="Toggle navigation">
