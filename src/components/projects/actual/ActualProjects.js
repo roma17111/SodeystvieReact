@@ -1,9 +1,10 @@
 import React from 'react';
+import SuperLager from "./SuperLager";
 
 const ActualProjects = () => {
     return (
         <div>
-            <h4>Здесь будут актуальные проекты</h4>
+            <SuperLager/>
         </div>
     );
 };
