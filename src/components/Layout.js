@@ -8,16 +8,25 @@ let date = new Date().getFullYear()
 
 const Layout = () => {
     return (
-        <div className="wrapper" >
+        <div className="wrapper">
             <header>
                 <HeaderInfo/>
             </header>
             <main className="main container p-5">
                 <Outlet/>
             </main>
-            <footer className="footer">
-                <div className="container">
-                    ©2004-{date} Все права защищены
+            <footer className="footer p-2">
+                <div className="container-fluid text-center">
+                    <span className="text-center">©2004-{date} Все права защищены</span>
+                </div>
+                <div className="text-center">
+                    <p><a className="text-center" href="mailto:sodeystvie@gmail.com">📧 sodeystvie@gmail.com</a></p>
+                </div>
+                <div className="text-center mb-2">
+                    <span>📞 +7(916)157-11-31</span>
+                </div>
+                <div className="created text-center">
+                    <span>Created by Roman and Nika</span>
                 </div>
             </footer>
         </div>
