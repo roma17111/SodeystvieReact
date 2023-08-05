@@ -1,6 +1,7 @@
 .lager-image{
     display: block;
     margin: auto;
+    border-radius: 10%;
 }
 
 .text{
