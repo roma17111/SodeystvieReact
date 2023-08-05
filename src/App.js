@@ -4,6 +4,9 @@ import {Route,Routes} from "react-router-dom";
 import {Test} from "./Test";
 import {Hello} from "./Hello";
 import {Layout} from "./components/Layout";
+import Volunteers from "./components/volunteers/Volunteers";
+import ActualProjects from "./components/projects/actual/ActualProjects";
+import ArchiveProjects from "./components/projects/archieve/ArchiveProjects";
 
 
 function App() {
@@ -12,7 +15,9 @@ function App() {
         <Routes>
             <Route path="/" element={<Layout/>}>
                 <Route path= "/" element={<Hello/>}/>
-                <Route path= "/test" element={<Test/>}/>
+                <Route path= "/volunteers" element={<Volunteers/>}/>
+                <Route path= "/actual" element={<ActualProjects/>}/>
+                <Route path= "/archive" element={<ArchiveProjects/>}/>
             </Route>
         </Routes>
     </>
