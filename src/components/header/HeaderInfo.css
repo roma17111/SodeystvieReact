@@ -4,13 +4,13 @@
     text-align: center;
 
 }
+.white{
+    color: #ffffff !important;
+    border: 0;
+    font-size: 20px;
+}
 
-@media (max-width: 550px) {
-    .info-div-header{
-        width: 500px;
-        display: block;
-        text-align: center;
-
-    }
+.nav-color{
+    background-color: #172970 !important;
 }
 
