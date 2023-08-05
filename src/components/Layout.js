@@ -12,7 +12,7 @@ const Layout = () => {
             <header>
                 <HeaderInfo/>
             </header>
-            <main className="main container">
+            <main className="main container p-5">
                 <Outlet/>
             </main>
             <footer className="footer">
