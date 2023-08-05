@@ -20,7 +20,7 @@ const Layout = () => {
                     <span className="text-center">©2004-{date} Все права защищены</span>
                 </div>
                 <div className="text-center">
-                    <p><a className="text-center" href="mailto:sodeystvie@gmail.com">📧 sodeystvie@gmail.com</a></p>
+                    <p><a className="text-center a-footer" href="mailto:sodeystvie@gmail.com">📧 sodeystvie@gmail.com</a></p>
                 </div>
                 <div className="text-center mb-2">
                     <span>📞 +7(916)157-11-31</span>

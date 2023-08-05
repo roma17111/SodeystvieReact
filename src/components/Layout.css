@@ -42,7 +42,7 @@ footer {
     background-color: #172970 !important;
 }
 
-a {
+.a-footer {
     border: 0;
     text-decoration: none;
     font-size: 24px;
