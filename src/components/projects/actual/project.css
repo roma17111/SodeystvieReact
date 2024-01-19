@@ -5,5 +5,15 @@
 }
 
 .text{
-    font-size: 20px;
+    padding: 100px;
+    font-size: 22px;
+}
+
+h1{
+    color: orange;
+    padding-top: 30px !important;
+}
+
+h2{
+    color: #e3e380;
 }

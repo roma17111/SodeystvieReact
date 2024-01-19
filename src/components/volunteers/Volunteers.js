@@ -19,7 +19,12 @@ const Volunteers = () => {
 
     return (
         <div className="container-fluid p-3">
-            <h1 className="text-center m-3">Волонтёры организации</h1>
+            <h1 className="text-center m-3 volunteer-text-color">Волонтёры организации</h1>
+            {volunteers.length === 0 &&
+                <h1 className="text-center m-3">
+                    Список волонтёров пуст.
+                </h1>
+            }
             <div className="row">
                 {volunteers.map((el) =>
                     <div className="col">

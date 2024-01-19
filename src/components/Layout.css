@@ -12,7 +12,7 @@ html {
 body {
     font-family: 'Roboto Condensed', sans-serif;
     height: 100%;
-    background: linear-gradient(105deg, #987b4670 0%, #8f764885 20%, #87714a9a 40%, #7f6c4caf 60%, #7f6c4caf 80%, #987b4670 100%), linear-gradient(190deg, #66573D 0%, #D3C09D 25%, #A76B01 25%, #F0E0C3 30%, #D5B885 100%);
+    background: url("https://catherineasquithgallery.com/uploads/posts/2023-01/1674283722_catherineasquithgallery-com-p-serii-fon-dlya-intro-foto-74.jpg");
 }
 
 .main {
@@ -39,7 +39,7 @@ footer {
 
 footer {
     margin-top: auto;
-    background-color: #172970 !important;
+    background-color: rgba(14, 4, 4, 0.05) !important;
 }
 
 .a-footer {
@@ -65,6 +65,11 @@ footer {
 .created{
     color: #6d9f17;
     font-size: 16px;
+}
+
+.text-footer-color{
+    color: #ab7b21 !important;
+    font-size: 16px !important;
 }
 
 

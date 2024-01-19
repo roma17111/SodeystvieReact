@@ -10,15 +10,13 @@
     font-size: 20px;
 }
 
-
-
 .btn{
     border: 0 !important;
     border-radius: 0 !important;
 }
 
 .nav-color{
-    background-color: #172970 !important;
+    background-color: rgb(20, 24, 42) !important;
 }
 
 
@@ -26,3 +24,5 @@ header{
     position: fixed;
     width: 100%;
 }
+
+

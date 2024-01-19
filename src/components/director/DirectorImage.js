@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import photo from "../../photos/director/director.jpg"
 import "./directorimage.css"
 import axios from "axios";
 
@@ -17,9 +16,9 @@ const DirectorImage = () => {
 
     return (
         <div className= "director">
-            <img className="image img-fluid" src={director.image} alt= "Картинка"/>
-            <h2 className="text-center m-3">Директор</h2>
-            <h3 className="text-center m-3">{director.fio}</h3>
+            <img  className="img-fluid rounded mx-auto d-block image" src={director.image} alt= "Картинка"/>
+            <h1 className="text-center m-3 director-text">Директор</h1>
+            <h3 className="text-center m-3 director-text-fio">{director.fio}</h3>
             <h5 className="text-center m-3">Информация о директоре</h5>
             <p className="text-center m-3">{director.text}</p>
         </div>

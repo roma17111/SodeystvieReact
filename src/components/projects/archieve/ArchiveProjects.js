@@ -2,12 +2,12 @@ import React, {useEffect, useState} from 'react';
 import Project from "../actual/Project";
 import axios from "axios";
 
-const actual_projects_uri = 'https://paganell.webtm.ru:8080/api/v1/project/archive';
+const archive_projects_uri = 'https://paganell.webtm.ru:8080/api/v1/project/archive';
 
 const ArchiveProjects = () => {
     const [actualProjects, setProjects] = useState([])
     useEffect(() => {
-        axios.get(actual_projects_uri)
+        axios.get(archive_projects_uri)
             .then(res => {
                 setProjects(res.data)
             })
@@ -15,6 +15,7 @@ const ArchiveProjects = () => {
 
     return (
         <div>
+            <h1 className="text-center m-3">Aрхивные проекты организации</h1>
             {actualProjects.length === 0 &&
                 <h1 className="text-center m-3">
                     Список проектов пуст.

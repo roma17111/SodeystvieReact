@@ -15,10 +15,11 @@ const ActualProjects = () => {
 
     return (
         <div>
+            <h1 className="text-center m-3">Aктуальные проекты организации</h1>
             {actualProjects.length === 0 &&
-                <h1 className="text-center m-3">
+                <h2 className="text-center m-3">
                     Список проектов пуст.
-                </h1>
+                </h2>
             }
             {actualProjects.map((el) => {
                     return <Project el={el} key={el.id}/>;

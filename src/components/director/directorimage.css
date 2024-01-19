@@ -1,7 +1,15 @@
 .image{
-    border-radius: 50%;
+    border-radius: 20% !important;
     display: block;
-    max-width: 320px;
+    max-width: 55%;
+    margin: 40px auto;
+
+}
+
+.v-image{
+    border-radius: 20% !important;
+    display: block;
+    max-width: 100%;
     margin: 40px auto;
 
 }
@@ -13,5 +21,14 @@
 h1 {
     font-size: 35px;
     margin-left: 20px;
+}
+
+.director-text{
+    font-size: 40px;
+    color: orange;
+}
+
+.director-text-fio{
+    color: #e3e380;
 }
 

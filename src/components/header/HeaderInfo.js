@@ -19,16 +19,16 @@ const HeaderInfo = () => {
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <img src={logo} className="lager-image" width= "58"  alt="Картинка"/>
                         <ul className="navbar-nav">
-                            <li className="nav-item btn btn-outline-danger">
+                            <li className="nav-item btn btn-outline-secondary">
                                 <Link className="nav-link  white" aria-current="page" to="/">Главная</Link>
                             </li>
-                            <li className="nav-item btn btn-outline-danger">
+                            <li className="nav-item btn btn-outline-secondary">
                                 <Link className="nav-link  white" to="/volunteers">Наши волонтёры</Link>
                             </li>
-                            <li className="nav-item btn btn-outline-danger">
+                            <li className="nav-item btn btn-outline-secondary">
                                 <Link className="nav-link  white" to="/actual">Актуальные проекты</Link>
                             </li>
-                            <li className="nav-item btn btn-outline-danger">
+                            <li className="nav-item btn btn-outline-secondary">
                                 <Link className="nav-link  white" to="/archive">Архив проектов</Link>
                             </li>
                         </ul>

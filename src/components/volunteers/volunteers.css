@@ -1,5 +1,13 @@
 .volunteer {
-    background-color: rgba(255, 196, 7, 0.15);
+    background-color: rgba(110, 153, 162, 0.07);
     max-width: 320px;
     border-radius: 10%;
+}
+
+.volunteer-text-color{
+    color: orange;
+}
+
+.volunteer-fio-text{
+    color: #e3e380;
 }
