@@ -1,25 +1,21 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {useState} from "react";
-import image from "../../photos/test/man.jpg"
 import Volunteer from "./Volunteer";
+import axios from "axios";
+
+const url = 'https://paganell.webtm.ru:8080/api/v1/volunteer/all';
 
 const Volunteers = () => {
-    const [volunteers] = useState([
-        {id: 1, image: image, fio: "Якименко Роман Эдуардович",
-            description: "Отличный волонтёр Отличный волонтёр" +
-                " Отличный волонтёр Отличный волонтёр" +
-                "Отличный волонтёр Отличный волонтёр" +
-                "Отличный волонтёр Отличный волонтёр" +
-                "Отличный волонтёр Отличный волонтёр" +
-                "Отличный волонтёр Отличный волонтёр" +
-                "Отличный волонтёр Отличный волонтёр"},
-        {id: 1, image: image, fio: "Якименко Роман Эдуардович", description: "Отличный волонтёр." +
-                "Проявил себя на последнем слёте только исключительно с положительной стороны"},
-        {id: 1, image: image, fio: "Якименко Роман Эдуардович", description: "Отличный волонтёр"},
-        {id: 1, image: image, fio: "Якименко Роман Эдуардович", description: "Отличный волонтёр"},
-        {id: 1, image: image, fio: "Якименко Роман Эдуардович", description: "Отличный волонтёр"},
-        {id: 2, image: image, fio: "Якименко Роман Эдуардович", description: "Отличный волонтёр"}
-    ])
+
+
+    const [volunteers,setVolunteers] = useState([])
+
+    useEffect(() => {
+        axios.get(url)
+            .then(res => {
+                setVolunteers(res.data)
+            })
+    }, []);
 
     return (
         <div className="container-fluid p-3">
