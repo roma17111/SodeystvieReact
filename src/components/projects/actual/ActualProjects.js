@@ -1,26 +1,28 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Project from "./Project";
-import lager from "../../../photos/superlager/superlager.jpg"
+import axios from "axios";
 
-// eslint-disable-next-line react-hooks/rules-of-hooks,no-use-before-define
-
+const actual_projects_uri = 'https://paganell.webtm.ru:8080/api/v1/project/actual';
 
 const ActualProjects = () => {
-    const [actualProjects] = useState([
-        {
-            id: 1, image: lager,
-            description: "Слёт любителей английского языка",
-            name: 'English Summer Camp',
-            text: "В этом месте будет информация о слёте Английского языка.\n" +
-                "                Слёт был основан в 2004-м году по инициативе трёх чёкнутых интузиастов,\n" +
-                "                которым было не насрать..."
-        },
+    const [actualProjects, setProjects] = useState([])
+    useEffect(() => {
+        axios.get(actual_projects_uri)
+            .then(res => {
+                setProjects(res.data)
+            })
+    }, []);
 
-    ])
     return (
         <div>
-            {actualProjects.map((el) =>
-            <Project el={el} key={el.id}/>
+            {actualProjects.length === 0 &&
+                <h1 className="text-center m-3">
+                    Список проектов пуст.
+                </h1>
+            }
+            {actualProjects.map((el) => {
+                    return <Project el={el} key={el.id}/>;
+                }
             )}
         </div>
     );
