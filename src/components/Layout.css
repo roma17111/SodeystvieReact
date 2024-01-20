@@ -12,6 +12,8 @@ html {
 body {
     font-family: 'Roboto Condensed', sans-serif;
     height: 100%;
+    width: 100%;
+    background: darkslategray;
     background: url("https://catherineasquithgallery.com/uploads/posts/2023-01/1674283722_catherineasquithgallery-com-p-serii-fon-dlya-intro-foto-74.jpg");
 }
 
