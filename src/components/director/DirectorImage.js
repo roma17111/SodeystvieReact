@@ -15,9 +15,9 @@ const DirectorImage = () => {
     }, []);
 
     return (
-        <div className= "director">
-            <img  className="img-fluid rounded mx-auto d-block image" src={director.image} alt= "Картинка"/>
+        <div className="director">
             <h1 className="text-center m-3 director-text">Директор</h1>
+            <img className="img-fluid rounded mx-auto d-block image" src={director.image} alt="Картинка"/>
             <h3 className="text-center m-3 director-text-fio">{director.fio}</h3>
             <h5 className="text-center m-3">Информация о директоре</h5>
             <p className="text-center m-3">{director.text}</p>

@@ -1,7 +1,19 @@
 .main-text-sod{
     color: orange;
+    justify-content: center!important;
+    align-items: center!important;
+    display: flex;
 }
 
 .main-text-center{
     color: #e3e380;
+    justify-content: center!important;
+    align-items: center!important;
+    display: flex;
+}
+
+.reg{
+    justify-content: center!important;
+    align-items: center!important;
+    display: flex;
 }
