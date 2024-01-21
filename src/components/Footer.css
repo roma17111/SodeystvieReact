@@ -1,0 +1,9 @@
+.text-footer-color{
+    color: #ab7b21 !important;
+    font-size: 16px !important;
+}
+
+footer {
+    margin-top: auto;
+    background-color: rgba(14, 4, 4, 0.05) !important;
+}
