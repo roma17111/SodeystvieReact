@@ -1,0 +1,11 @@
+.text-contact{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    min-font-size: 100%;
+}
+
+.email:hover{
+    font-size:40px;
+    color: blue!important;
+}

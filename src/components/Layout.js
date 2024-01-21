@@ -5,7 +5,6 @@ import './Layout.css'
 import {HeaderInfo} from "./header/HeaderInfo";
 import Footer from "./Footer";
 
-let date = new Date().getFullYear()
 
 const Layout = () => {
     return (

@@ -25,4 +25,10 @@ header{
     width: 100%;
 }
 
+.header-text{
+    display: flex;
+    justify-content: center;
+    margin-left: 150px;
+}
+
 
