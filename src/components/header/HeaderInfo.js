@@ -1,6 +1,5 @@
 import React from 'react';
 import './HeaderInfo.css'
-import logo from "../../photos/sod.jpg";
 import {Link} from "react-router-dom";
 const HeaderInfo = () => {
     return (

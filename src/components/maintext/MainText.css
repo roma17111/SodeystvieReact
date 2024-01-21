@@ -1,6 +1,7 @@
 .main-text-sod{
     padding: 0 !important;
-    color: orange;
+    color: #ce8e1c;
+    font-size: 60px;
     justify-content: center!important;
     align-items: center!important;
     display: flex;
@@ -8,7 +9,7 @@
 
 .main-text-center{
     padding: 0;
-    color: #e3e380;
+    color: white;
     justify-content: center!important;
     align-items: center!important;
     display: flex;
@@ -19,3 +20,10 @@
     align-items: center!important;
     display: flex;
 }
+
+.img{
+    display: flex!important;
+    justify-content: center!important;
+    width: 80vh;
+}
+
