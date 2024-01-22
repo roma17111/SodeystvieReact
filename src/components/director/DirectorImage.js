@@ -1,17 +1,22 @@
 import React, {useEffect, useState} from 'react';
 import "./directorimage.css"
 import axios from "axios";
+import async from "async";
 
 const directorUrl = 'https://paganell.webtm.ru:8080/api/v1/director/photo';
 
 const DirectorImage = () => {
 
-    const [director,setDirector] = useState({});
+    const [director, setDirector] = useState({});
+
+    async function getDirector() {
+      const data = axios.get(directorUrl);
+      const json = (await data).data;
+        setDirector(json);
+    }
+
     useEffect(() => {
-        axios.get(directorUrl)
-            .then(res =>{
-                setDirector(res.data)
-            })
+        getDirector();
     }, []);
 
     return (

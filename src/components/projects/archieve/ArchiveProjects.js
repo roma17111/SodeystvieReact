@@ -6,14 +6,19 @@ import Load from "../../util/Load";
 const archive_projects_uri = 'https://paganell.webtm.ru:8080/api/v1/project/archive';
 
 const ArchiveProjects = () => {
-    const [isWait,setIsWait] = useState(true)
+    const [isWait,setIsWait] = useState(false)
     const [archiveProjects, setProjects] = useState([])
+
+    async function getProjects() {
+        setIsWait(true);
+        const res = axios.get(archive_projects_uri);
+        const data = (await res).data;
+        setProjects(data);
+        setIsWait(false);
+    }
+
     useEffect(() => {
-        axios.get(archive_projects_uri)
-            .then(res => {
-                setProjects(res.data)
-                setIsWait(false)
-            })
+       getProjects()
     }, []);
 
     return (

@@ -7,14 +7,19 @@ const actual_projects_uri = 'https://paganell.webtm.ru:8080/api/v1/project/actua
 
 
 const ActualProjects = () => {
-    const [isWait,setIsWait] = useState(true)
+    const [isWait,setIsWait] = useState(false)
     const [actualProjects, setProjects] = useState([])
+   async function getProjects() {
+        setIsWait(true);
+        const res = axios.get(actual_projects_uri);
+        const data = (await res).data;
+        setProjects(data);
+        setIsWait(false);
+    }
+
+
     useEffect(() => {
-        axios.get(actual_projects_uri)
-            .then(res => {
-                setProjects(res.data)
-                setIsWait(false)
-            })
+            getProjects()
     }, []);
 
     return (
